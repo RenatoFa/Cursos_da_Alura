@@ -1,0 +1,29 @@
+.app {
+    background: #f1f1f1;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: "cabecalho" "conteudo" "rodape"; /*Definimos os templates para o grid*/
+    grid-auto-columns: auto; /*Definimos como as colunas irao ser gerenciadas(no caso automaticas)*/
+    grid-template-rows: 50px auto auto; /*Definimos o tamanho das colunas */
+}
+
+.cabecalho {
+    grid-area: cabecalho; /*Definimos o nome da area do grid*/
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.conteudo {
+    grid-area: conteudo; /*Definimos o nome da area do grid*/
+    padding: 0 0rem;
+}
+
+.rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    grid-area: rodape; /*Definimos o nome da area do grid*/
+    padding: 1rem;
+    text-align: center;
+}
