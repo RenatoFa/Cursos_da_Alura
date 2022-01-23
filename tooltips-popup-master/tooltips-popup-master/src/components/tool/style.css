@@ -1,0 +1,28 @@
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-box {
+  position: absolute;
+  background: grey;
+  color: black;
+  padding: 5px;
+  left: -50px;
+  border-radius: 5px;
+  top: calc(100% + 5px);
+  display: none;
+  z-index: 1;
+}
+
+.tooltip-box.visible {
+  display: block;
+}
+
+.tooltip-arrow {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+}
